@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register With Us</title>
+	<style>	
+	body{
+		background-color: black;
+  background-image: url(/img/UmbrellaCorporation3.png);
+  color:white;
+  background-size: auto auto;
+  background-size: 200% 200%;
+font-family: 'Source Sans Pro', sans-serif;
+	}
+	.red{
+		color: red;
+	}
+	</style>
+</head>
+<body>
+<header><h1>Umbrella Wants You!</h1></header>
+<form method="POST" action="https://requestb.in/11blvfj1">
+<label for="email">Email Address</label>
+<input type="text" id="email" name="email" placeholder="Email Address"><br>
+<label for="password">Create a Password</label> 
+<input type="password" id="password" name="password" placeholder="Password">
+<br>
+<h2>Bio</h2>
+<textarea name="bio" placeholder="Tell us about yourself!"></textarea><br>
+<h2 class="red">How did you find us?</h2>
+<label for="1"><input type="checkbox" name="found[]" id="1" value="billboard">Billboard<br></label>
+<lable for="2"><input type="checkbox" name="found[]" id="2" value="radio_ad">Radio Ad<br></lable>
+<lable for="3"><input type="checkbox" name="found[]" id="3" value="internet_ad">Internet Ad<br></lable>
+<lable for="4"><input type="checkbox" name="found[]" id="4" value="other">Other<br></lable>
+
+<h2>What Broswer Do You Use?</h2>
+<select name="Browser">
+	<option value="Chrome">Google Chrome</option>
+	<option value="Firefox">Mozilla Firefox</option>
+	<option value="Explorer">Mistake</option>
+	<option value="Safari">Safari</option>
+</select>
+<hr>
+<button>Submit to our power</button>
+</form>
+
+</body>
+</html>
