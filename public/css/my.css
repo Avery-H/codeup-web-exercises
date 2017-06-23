@@ -1,0 +1,16 @@
+button{
+	background-color: black;
+	color:white;
+	padding:20px 20px;
+	margin:5px;
+}
+body{
+  /*background-image: url(/img/giphy.webp);*/
+  background-size: 100% 200%;
+font-family: 'Source Sans Pro', sans-serif;
+}
+textarea{
+	width:250px;
+	height:59px;
+	margin: 5px;
+}

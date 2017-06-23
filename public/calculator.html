@@ -3,97 +3,44 @@
 <head>
 	<meta charset="utf-8">
 	<title>Calculator</title>
-
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/my.css">
 </head>
-<body>
-	<textarea id = "first" placeholder="first"></textarea>
-	<textarea id = "second" placeholder="operator"></textarea>
-	<textarea id = "third" placeholder="last"></textarea>
-		<br>
-	<button class = "numbers numbers2" data-value="1">1</button>
-	<button class = "numbers numbers2" data-value="2">2</button>
-	<button class = "numbers numbers2" data-value="3">3</button>
+<body class = "container-fluid">
+		<div class="row center-block">
+	<textarea id = "trueFirst" placeholder="Calc like you're Genghis Khan" readonly></textarea>
+	<textarea id = "first" placeholder="first" hidden></textarea>
+	<textarea id = "second" placeholder="operator" hidden></textarea>
+	<textarea id = "third" placeholder="last" hidden></textarea>
+		</div>
+		<div class="row center-block">
+	<button class = "nuid" data-value="1">1</button>
+	<button class = "numbers" data-value="2">2</button>
+	<button class = "numbers" data-value="3">3</button>
 	<button class = "operator" data-value="+">+</button>
-		<br>
-	<button class = "numbers numbers2" data-value="4">4</button>
-	<button class = "numbers numbers2" data-value="5">5</button>
-	<button class = "numbers numbers2" data-value="6">6</button>
+	<button id = "squared" data-value="^2">^2</button>
+		</div>
+		<div class="row center-block">
+	<button class = "numbers" data-value="4">4</button>
+	<button class = "numbers" data-value="5">5</button>
+	<button class = "numbers" data-value="6">6</button>
 	<button class = "operator" data-value="-">-</button>
-		<br>
-	<button class = "numbers numbers2" data-value="7">7</button>
-	<button class = "numbers numbers2" data-value="8">8</button>
-	<button class = "numbers numbers2" data-value="9">9</button>
+	<button id = "neg" data-value="neg">+/-</button>
+		</div>
+		<div class="row center-block">
+	<button class = "numbers" data-value="7">7</button>
+	<button class = "numbers" data-value="8">8</button>
+	<button class = "numbers" data-value="9">9</button>
 	<button class = "operator" data-value="*">*</button>
-		<br>
-	<button class = "numbers numbers2" data-value="0">0</button>
-	<button class = "operator" data-value="/">/</button>
-	<button id = "equals" data-value="=">=</button>
+	<button id = "dec" data-value="dec">.</button>
+		</div>
+		<div class="row center-block">
 	<button id = "clear">C</button>
-<script>
- (function() {
-        "use strict";
-        var numbers = document.getElementsByClassName("numbers");
-         for (var i = 0; i < numbers.length; i++){
-         	numbers[i].addEventListener("click", function(){
-				var numValue = this.getAttribute("data-value");
-				var value3 = document.getElementById("third");
-				var value1 = document.getElementById("first");
-        		if(document.getElementById("second").classList.contains('democlass')){
-        		value3.innerHTML += numValue;
-        	}else{
-        		value1.innerHTML += numValue;
-        	}
-          	})
-}
-
-		  var operators = document.getElementsByClassName("operator");
-		     for (var x = 0; x < operators.length; x++){
-         		operators[x].addEventListener("click", function(){
-				var newVar = this.getAttribute("data-value");
-				var value2 = document.getElementById("second");
-        		value2.innerHTML = newVar;
-        		document.getElementById("second").setAttribute("class", "democlass");		
-          	})
- }
-		var clear = document.getElementById('clear');
-			clear.addEventListener("click", function(){
-				var value1 = document.getElementById("first");
-        		value1.innerHTML = "";
-				var value2 = document.getElementById("second");
-        		value2.innerHTML = "";
-				var value3 = document.getElementById("third");
-        		value3.innerHTML = "";
-		})
-		var equals = document.getElementById('equals');
-			equals.addEventListener("click", function(){
-				var valueFirst = document.getElementById("first").innerHTML;
-				var valueSecond = document.getElementById("third").innerHTML;
-				var operator1 = document.getElementById("second").innerHTML;
-				switch (operator1){
-					case "+":
-						var final = Number(valueFirst) + Number(valueSecond);
-						alert(final);
-						location.reload();
-					break;
-					case "-":
-						var final = Number(valueFirst) - Number(valueSecond);
-						alert(final); 
-						location.reload();
-					break;
-					case "*":
-						var final = Number(valueFirst) * Number(valueSecond);
-						alert(final); 
-						location.reload();
-					break;
-					case "/":
-					var final = Number(valueFirst) / Number(valueSeconN);
-						alert(final); 
-						location.reload();
-
-					break;
-				}
-			})
- })();
-</script>
+	<button class = "numbers" data-value="0">0</button>
+	<button id = "equals" data-value="=">=</button>
+	<button class = "operator" data-value="/">/</button>
+	<button id = "power" data-value="pow">^x</button>
+		</div>
+<script src = "js/my.js"></script>
 </body>
 </html>
