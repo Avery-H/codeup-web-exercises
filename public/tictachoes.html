@@ -6,83 +6,70 @@
 </head>
 <body>
 	<main>
+
+		<div id="top-bar" >
+		<div class="player" id="num1">Player 1<span id="scr1">score 0&nbsp;</span></div>
+		<div class="player" id="num2">Player 2<span id="scr2">&nbsp;0 score</span></div>
+		</div>
 	<!-- Calls for the Board -->
 		<div class="container">
 			<!-- Creates Locked Boxes to prevent overlapping -->
 			<div class="boxs">
-				<!-- each Select is a Tile, classes are for color-->
-				<select class="b">
-					<!-- Self explanitory -->
-					<option></option>
-					<option>x</option>
-					<option>o</option>				
-				</select>
+				<div class="g" data-row="1" data-col="1">			
+				</div>
 			</div>
 
 			<div class="boxs">
-				<select class="r">
-					<option></option>
-					<option>x</option>
-					<option>o</option>
-				</select>
+				<div class="g" data-row="1" data-col="2">
+				</div>
 			</div>
 			<!-- Clear shifts boxes down a row -->
 			<div class="boxs" clear>
-				<select class="b">
-					<option></option>
-					<option>x</option>
-					<option>o</option>
-				</select>
+				<div class="g" data-row="1" data-col="3">
+				</div>
 			</div>
 			
 			<div class="boxs">
-				<select class="r">
-					<option></option>
-					<option>x</option>
-					<option>o</option>
-				</select>
+				<div class="g" data-row="2" data-col="1">
+
+				</div>
 			</div>
 			
 			<div class="boxs">
-				<select class="b">
-					<option></option>
-					<option>x</option>
-					<option>o</option>
-				</select>
+				<div class="g" data-row="2" data-col="2">
+
+				</div>
 			</div>
 			
 			<div class="boxs" clear>
-				<select class="r">
-					<option></option>
-					<option>x</option>
-					<option>o</option>
-				</select>
+				<div class="g" data-row="2" data-col="3">
+
+				</div>
 			</div>
 			
 			<div class="boxs">
-				<select class="b">
-					<option></option>
-					<option>x</option>
-					<option>o</option>x
-				</select>
+				<div class="g" data-row="3" data-col="1">
+
+				</div>
 			</div>		
 			
 			<div class="boxs">
-				<select class="r">
-					<option></option>
-					<option>x</option>
-					<option>o</option>
-				</select>
+				<div class="g" data-row="3" data-col="2">
+
+				</div>
 			</div>
 			
 			<div class="boxs">
-				<select class="b">
-					<option></option>
-					<option>x</option>
-					<option>o</option>
-				</select>
+				<div class="g" data-row="3" data-col="3">
+
+				</div>
 			</div>
 		</div>
+	<div id="button">
+		<button id="reset">Reset</button>
+	</div>
 	</main>
+<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+<script type="text/javascript" src="js/toes.js"></script>
 </body>
 </html>

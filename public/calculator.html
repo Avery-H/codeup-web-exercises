@@ -3,44 +3,47 @@
 <head>
 	<meta charset="utf-8">
 	<title>Calculator</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="css/my.css">
 </head>
-<body class = "container-fluid">
-		<div class="row center-block">
-	<textarea id = "trueFirst" placeholder="Calc like you're Genghis Khan" readonly></textarea>
-	<textarea id = "first" placeholder="first" hidden></textarea>
-	<textarea id = "second" placeholder="operator" hidden></textarea>
-	<textarea id = "third" placeholder="last" hidden></textarea>
-		</div>
-		<div class="row center-block">
-	<button class = "nuid" data-value="1">1</button>
-	<button class = "numbers" data-value="2">2</button>
-	<button class = "numbers" data-value="3">3</button>
-	<button class = "operator" data-value="+">+</button>
-	<button id = "squared" data-value="^2">^2</button>
-		</div>
-		<div class="row center-block">
-	<button class = "numbers" data-value="4">4</button>
-	<button class = "numbers" data-value="5">5</button>
-	<button class = "numbers" data-value="6">6</button>
-	<button class = "operator" data-value="-">-</button>
-	<button id = "neg" data-value="neg">+/-</button>
-		</div>
-		<div class="row center-block">
-	<button class = "numbers" data-value="7">7</button>
-	<button class = "numbers" data-value="8">8</button>
-	<button class = "numbers" data-value="9">9</button>
-	<button class = "operator" data-value="*">*</button>
-	<button id = "dec" data-value="dec">.</button>
-		</div>
-		<div class="row center-block">
-	<button id = "clear">C</button>
-	<button class = "numbers" data-value="0">0</button>
-	<button id = "equals" data-value="=">=</button>
-	<button class = "operator" data-value="/">/</button>
-	<button id = "power" data-value="pow">^x</button>
-		</div>
+<body>
+	<main id = wrapper>
+		<textarea id = "trueFirst" readonly disabled></textarea>
+		<textarea id = "first" placeholder="first" hidden></textarea>
+		<textarea id = "second" placeholder="operator" hidden></textarea>
+		<textarea id = "third" placeholder="last" hidden></textarea>
+			
+		<button class = "numbers" data-value="1">1</button>
+		<button class = "numbers" data-value="2">2</button>
+		<button class = "numbers" data-value="3">3</button>
+		<button class = "operator" data-value="+">+</button>
+		
+		<button class = "numbers" data-value="4">4</button>
+		<button class = "numbers" data-value="5">5</button>
+		<button class = "numbers" data-value="6">6</button>
+		<button class = "operator" data-value="-">-</button>
+					
+		<button class = "numbers" data-value="7">7</button>
+		<button class = "numbers" data-value="8">8</button>
+		<button class = "numbers" data-value="9">9</button>
+		<button class = "operator" data-value="*">*</button>
+					
+		<button id = "clear">C</button>
+		<button class = "numbers" data-value="0">0</button>
+		<button id = "dec" data-value="dec">.</button>
+		<button class = "operator" data-value="/">/</button>
+		
+		<button id = "squared" data-value="^2">^2</button>
+		<button id = "power" data-value="pow">^x</button>
+		<button id = "neg" data-value="neg">+/-</button>
+		<button id = "equals" data-value="=">=</button>
+		
+		<button id = "squareRoot">√2</button>
+		<button id = "squareBy">√x</button>
+		<button class = "operator" data-value="%">%</button>
+		<button id = "ints">^Int</button>
+	</main>
 <script src = "js/my.js"></script>
 </body>
 </html>

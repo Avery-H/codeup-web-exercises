@@ -1,16 +1,33 @@
-button{
-	background-color: black;
-	color:white;
-	padding:20px 20px;
-	margin:5px;
-}
 body{
-  /*background-image: url(/img/giphy.webp);*/
-  background-size: 100% 200%;
-font-family: 'Source Sans Pro', sans-serif;
+	background-size: 100% 200%;
+}
+#wrapper{
+	height:17.5em;
+	width:22em;
+	margin:5em auto;
+	padding:.5em;
+
 }
 textarea{
-	width:250px;
-	height:59px;
-	margin: 5px;
+	width:100%;
+	background-color: transparent;
+	color:white;
+	font-size: 1.2em;
+	text-shadow: 2px 2px  3px #000000;
+	border:solid black 1px;
+}
+button{
+	background-color: transparent;
+	color:white;
+	padding:.2em .5em;
+	float:left;
+	font-size: 1.5em;
+	margin:.1em;
+	width:23.5%;
+	border:none;
+	outline:none;
+	border-radius: 15%;
+	text-align: center;
+	text-decoration: none;
+	text-shadow: 1px 1px  1px #000000;
 }

@@ -3,22 +3,7 @@
 	height: 608px;
 	width: 608px;
 	border:1px;
-}
-/*Keeps from overlapping*/
-div{
-	overflow:hidden;
-	height:200px;
-	width:200px;
-}
-/*X's and O's*/
-select{
-
-	width:600px;
-	height:200px;
-	color:white;
-	border-color: black;
-	font-size: 10em;
-	text-indent: 45px;
+	margin: 10px auto;
 }
 /*The tiles of the board*/
 .boxs{
@@ -28,10 +13,66 @@ border: solid black 1px;
 float: left; 
 }
 /*Colors tiles Red*/
-.r{
-	background-color: red;
+.g{
+	background-color: grey;
+	height:200px;
+	width:200px;
 }
-/*Colors tiles Black*/
-.b{
-	background-color: black;
+#top-bar{
+	height:100px;
+	width:100%;
+	margin:10px auto;
 }
+.player{
+	width:49.7%;
+	background-color: green;
+	height:100%;
+	border:solid black 1px;
+	font-size: 3em;
+}
+
+#num1{
+float:left;
+}
+
+#num2{
+float:left;
+	clear;
+	text-align: right;
+}
+#button{
+	width:100%;
+
+}
+#reset{
+	margin:10px 40%;
+	width:20%;
+	height: 40px;
+}
+
+#scr1{
+font-size: 1em;
+float:right;
+}
+
+#scr2{
+font-size: 1em;	
+float: left;
+}
+
+@media screen and (max-width:800px) {
+.player{
+	width:100%;
+}
+
+#scr2{
+	float:right;
+	direction: rtl;
+}
+
+#num2{
+float:left;
+	clear;
+	text-align: left;
+}
+
