@@ -11,30 +11,58 @@
 <body>
 	<dl>
 		<dt>Great Smokey Mountains</dt>
-		<dd class="invis">There are over 800 miles of hiking trails!</dd>
+			<dd class="invis">There are over 800 miles of hiking trails!</dd>
 		<dt>Grand Canyon</dt>
-		<dd class="invis">A mile deep and 18 miles wide? No, not my mom.</dd>
+			<dd class="invis">A mile deep and 18 miles wide? No, not my mom.</dd>
 		<dt>Yosemite</dt>
-		<dd class="invis">Over 5 million people visit per year</dd>
+			<dd class="invis">Over 5 million people visit per year</dd>
 		<dt>Rocky Mountian</dt>
-		<dd class="invis">No introduction needed, the beauty of this park speaks for itself.</dd>
+			<dd class="invis">No introduction needed, the beauty of this park speaks for itself.</dd>
 		<dt>Zion</dt>
-		<dd class="invis">The road of Zion is a iconic</dd>
+			<dd class="invis">The road of Zion is a iconic</dd>
 		<dt>Yellowstone</dt>
-		<dd class="invis">Deadly not just because of animals, But even the ground is out to get you!</dd>
+			<dd class="invis">Deadly not just because of animals, But even the ground is out to get you!</dd>
 		<dt>Olympic</dt>
-		<dd class="invis">Ever watch Jurassic Park? You'll feel like part of the cast if you go here.</dd>
+			<dd class="invis">Ever watch Jurassic Park? You'll feel like part of the cast if you go here.</dd>
 		<dt>Acadia</dt>
-		<dd class="invis">This is where vampires come from</dd>
+			<dd class="invis">This is where vampires come from</dd>
 		<dt>Grand Teton</dt>
-		<dd class="invis">Standing 7,000 feet high with a crystal lake under it makes it worth a visit.</dd>
+			<dd class="invis">Standing 7,000 feet high with a crystal lake under it makes it worth a visit.</dd>
 		<dt>Glacier</dt>
-		<dd class="invis">Over a million accres??? Jesus couldn't "cross" this river</dd>
+			<dd class="invis">Over a million accres??? Jesus couldn't "cross" this river</dd>
+		<h3>Canyon State</h3>
+			<ul class="factual">
+			<li>The second largest Canyon in the country</li>
+			<li>Travel via hiking, biking, car, or hourse</li>
+			<li>Check it out on the virtual interactive map!</li>
+			<li>Located in our very own Panhandle</li>
+			</ul>
+		<h3>Guadalupe River</h3>
+			<ul class="factual">
+			<li>This "National Park" has a 250 mile river!</li>
+			<li>A local fan favorite activity</li>
+			<li>From kayaking to tubing, we got all your watersports needs!</li>
+			<li>Almost dead center in Texas, all Texans go sometime!</li>
+			</ul>
+		<h3>Resaca de la Pamla</h3>
+			<ul class="factual">
+			<li>The largest tract of native habitat in the World</li>
+			<li>Hosted by The World Birding Center</li>
+			<li>Ever seen an Ocelot? Here's your chance!</li>
+			<li>Located in the Rio Grande Valley, stop by on your way from excaping Trump!</li>
+			</ul>
 		<script type="text/javascript" src="js/jquery-3.2.1.js"></script>
 		<script type="text/javascript">
 			$('dt').click(function(){
 				$(this).next('dd').toggleClass('invis');
 				console.log("nu");
+			})
+			$('h3').click(function(){
+				$(this).next().children().last().css('background-color', '#FF0');
+				$(this).next().children().first().css('font-weight','bold');
+			})
+			$('li').click(function(){
+				$(this).parent().children().first('li').css('color','blue');
 			})
 		</script>
 </body>

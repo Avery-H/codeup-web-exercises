@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Store</title>
+</head>
+<body>
+
+<h1>My Tool Store</h1>
+
+<table id="products">
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Quantity</th>
+            <th>Price</th>
+            <th>Categories</th>
+        </tr>
+    </thead>
+    <tbody id="insertProducts"></tbody>
+</table>
+<button> leh me see</button>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+<script>
+(function() {
+    "use strict";
+    var price1;
+    var quantity1;
+    var title1;
+    var categories1;
+    // TODO: Create an ajax GET request for /data/inventory.json
+    var jqXhr = $.ajax("/data/inventory.json");
+
+// Attach callback functions individually
+$('button').click(function(){
+    jqXhr.done(function hateu(data, status, jqXhr) {
+        alert("Everything went great!");
+        for (var i = 0; i < data.length;i++){
+            console.log(data[i].categories);
+            price1 = data[i].price;
+            quantity1 = data[i].quantity;
+            title1 = data[i].title;
+            categories1 = data[i].categories;
+            $("thead").append("<tr>"+"<th>"+title1+"</th>"+ "<th>"+quantity1+"</th>"+"<th>"+price1+"</th>"+"<th>"+categories1+"</th>"+"</tr>");
+    }
+    });
+    
+    jqXhr.fail(function(jqXhr, status, error) {
+        alert("There was an error!");
+    });
+    
+    jqXhr.always(function() {
+        alert("And we're done!");
+    });
+})
+
+    // TODO: Take the data from inventory.json and append it to the products table
+
+    //       HINT: Your data should come back as a JSON object; use console.log() to inspect
+    //             its contents and fields
+    //       HINT: You will want to target #insertProducts for your new HTML elements
+})();
+</script>
+
+</body>
+</html>
