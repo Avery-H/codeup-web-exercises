@@ -1,0 +1,19 @@
+body{
+	width:600px;
+	background-color: #00faff;
+
+}
+.box{
+	text-align: center;
+	width:30%;
+	border:1px black solid;
+	height:150px;
+	float:left;
+}
+section{
+	width:100%;
+}
+#map{
+	height:300px;
+	width:100%;
+	})
