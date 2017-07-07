@@ -1,0 +1,27 @@
+#canvas{
+	width: 700px;
+	min-height: 500px;
+	margin-right: auto;
+	margin-left:50px;
+	margin-top: 70px;
+	border:1px solid black;
+}
+body{
+	height: 100%;
+	width:100%;
+}
+
+#sneek{
+	width:25px;
+	height:25px;
+	background-color: black;
+	position: relative;
+}
+
+#sneekFood{
+	width:25px;
+	height:25px;
+	/*background-image: url(../img/apple.jpeg);*/
+	background-color: blue;
+	position: relative;
+}

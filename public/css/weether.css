@@ -1,19 +1,23 @@
 body{
 	width:600px;
 	background-color: #00faff;
-
 }
 .box{
 	text-align: center;
-	width:30%;
+	width:33%;
 	border:1px black solid;
-	height:150px;
+	height:180px;
 	float:left;
+	background-color: grey;
+	opacity: .8;
 }
 section{
 	width:100%;
+	margin: 10px auto;
+	align-content: center;
 }
 #map{
 	height:300px;
 	width:100%;
+	opacity: .8;
 	})
