@@ -84,7 +84,6 @@ function move(a){
 				if ((safe != "left") && (safe != undefined)){
 					break;
 				} 
-				safe = "left";
 				sneek.animate({left: "-=25"},0,function(){
 						checkOut();
 						setTimeout(function(){
@@ -96,7 +95,6 @@ function move(a){
 				if ((safe != "right") && (safe != undefined)){
 					break;
 				} 
-				safe = "right";
 				sneek.animate({left: "+=25"},0,function(){
 					checkOut();
 						setTimeout(function(){
@@ -107,8 +105,7 @@ function move(a){
 				case "up":
 				if((safe != "up") && (safe != undefined)){
 					break;
-				} 
-				safe = "up";
+				}
 				sneek.animate({top: "-=25"},0,function(){
 					checkOut();
 						setTimeout(function(){
@@ -120,7 +117,6 @@ function move(a){
 				if ((safe != "down") && (safe != undefined)){
 					break;
 				} 
-				safe = "down";
 				sneek.animate({top: "+=25"},0,function(){
 					checkOut();
 						setTimeout(function(){

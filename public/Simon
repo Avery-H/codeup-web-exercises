@@ -1,0 +1,7 @@
+Simon		
+
+
+1. com array, player array.
+-com array has values 1-4 randomly being selected and inputted. 
+-player array is populated via player input. 
+2. visual functions, checks array, waits .5 a second, moves to next placement in array. changes css then unchanges.
